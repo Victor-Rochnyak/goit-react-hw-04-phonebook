@@ -5,6 +5,8 @@ import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
 // імпорт стилів
 import { AppContainer, H2 } from './App.styled';
+
+
 class App extends Component {
   state = {
     contacts: [
@@ -16,7 +18,7 @@ class App extends Component {
     filter: '',
   };
   // добавдяємо контакт та номер телефону по сабміту та появляння помилки,якщо ім'я та номер вже є в контакті
-  addContact = ({ name, number }) => {
+  addContact = ( name, number ) => {
     const contact = {
       id: nanoid(),
       name,
