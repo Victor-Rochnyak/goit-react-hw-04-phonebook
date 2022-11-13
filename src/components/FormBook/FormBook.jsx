@@ -31,6 +31,7 @@ export default function FormBook({ onSubmit }) {
 
     reset();
   };
+  
   const reset = () => {
     setName('');
     setNumber('');
